@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joqbay's Parking System</title>
+    <link rel="stylesheet" href="/assets/styles/home-page.css">
+    <script src="/assets/scripts/ts/app.js" defer></script>
+</head> 
+<body>
+    <header>
+        <h1>Joqbay'a Parking</h1>
+    </header>
+    <main class="jp-container">
+        <form class="jp-container__form">
+            <div class="jp-container--form__model">
+                <label for="model">Enter your car license plate:</label>
+                <input type="text" name="model" id="model" placeholder="My car is a...">
+            </div>
+            <div class="jp-container--form__plate">
+                <label for="model">Enter the vehicle model:</label>
+                <input type="text" name="plate" id="plate" placeholder="The plate is...">
+            </div>
+            <div class="jp-container--form__submit">
+                <input type="submit" value="Register" id="register">
+            </div>
+        </form>
+
+        <section>
+            <div>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Plate</th>
+                        <th>Entry</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+              <tbody id="parking"></tbody>
+            </div>
+        </section>
+    </main>
+
+    <footer class="jp-footer">
+        <h4>Joqbay's Parking. 2023</h4>
+    </footer>
+</body>
+</html>
